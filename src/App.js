@@ -4,6 +4,7 @@ import StaleClosureFix from './StaleClosureFix';
 import StaleClosureUseEffect from './StaleClosureUseEffect';
 import StaleClosureUseEffectFix from './StaleClosureUseEffectFix';
 import StaleClosureUseState from './StaleClosureUseState';
+import StaleClosureUseStateFix from './StaleClosureUseStateFix';
 import './style.css';
 
 export default function App() {
@@ -19,6 +20,8 @@ export default function App() {
       <StaleClosureUseEffectFix />
       <h4>Stale Closure useState</h4>
       <StaleClosureUseState />
+      <h4>Stale Closure useState Fix</h4>
+      <StaleClosureUseStateFix />
     </div>
   );
 }
