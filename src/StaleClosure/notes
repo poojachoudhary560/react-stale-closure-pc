@@ -1,0 +1,5 @@
+Hooks ease the management of state and side effects inside functional React components.
+Moreover, repeated logic can be extracted into a custom hook to reuse across the application.
+
+Hooks heavily rely on JS Closures. Hooks are soo expressive and simple. But closures can be tricky.
+One issue you can encounter with hooks is a stale closure.
