@@ -1,0 +1,25 @@
+import React from 'react';
+
+function createIncrement(incBy) {
+  let value = 0;
+  function increment() {
+    value += incBy;
+    console.log(value);
+  }
+  const message = `Increment result is ${value}`;
+  function log() {
+    console.log(message);
+  }
+  return [increment, log];
+}
+
+const JSClosureComponent = (props) => {
+  useEffect(() => {
+    const [increment, log] = createIncrement(1);
+    increment();
+    increment();
+    increment();
+    log();
+  }, []);
+  return <></>;
+};
