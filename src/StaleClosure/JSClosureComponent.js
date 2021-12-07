@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function createIncrement(incBy) {
   let value = 0;
@@ -10,6 +10,7 @@ function createIncrement(incBy) {
   function log() {
     console.log(message);
   }
+  // here log is a stale closure as it has captured the outdated value
   return [increment, log];
 }
 
@@ -23,3 +24,5 @@ const JSClosureComponent = (props) => {
   }, []);
   return <></>;
 };
+
+export default JSClosureComponent;

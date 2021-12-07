@@ -1,11 +1,12 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import StaleClosure from './StaleClosure';
+import './style.css';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <h4>Stale Closure JS </h4>
+      <StaleClosure />
     </div>
   );
 }
