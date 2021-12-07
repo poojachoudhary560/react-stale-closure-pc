@@ -3,9 +3,9 @@ import React, { useState, useEffect } from 'react';
 function WatchCount() {
   const [count, setCount] = useState(0);
   useEffect(function () {
-    setInterval(function log() {
+    /*  setInterval(function log() {
       console.log(`Count is ${count}`);
-    }, 2000);
+    }, 2000); */
   }, []);
   return (
     <div>
