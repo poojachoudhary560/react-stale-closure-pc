@@ -3,6 +3,7 @@ import StaleClosure from './StaleClosure';
 import StaleClosureFix from './StaleClosureFix';
 import StaleClosureUseEffect from './StaleClosureUseEffect';
 import StaleClosureUseEffectFix from './StaleClosureUseEffectFix';
+import StaleClosureUseState from './StaleClosureUseState';
 import './style.css';
 
 export default function App() {
@@ -16,6 +17,8 @@ export default function App() {
       <StaleClosureUseEffect />
       <h4>Stale Closure useEffect Fix</h4>
       <StaleClosureUseEffectFix />
+      <h4>Stale Closure useState</h4>
+      <StaleClosureUseState />
     </div>
   );
 }
