@@ -11,6 +11,7 @@ function createIncrement(incBy) {
     console.log(message);
   }
   // here log is a stale closure as it has captured the outdated value
+  // Fixing the stale closure requires closing the closure over actually changed variable: value
   return [increment, log];
 }
 
